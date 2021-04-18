@@ -1,2 +1,2 @@
 # geekshop
-Wed-project
+Web-project
