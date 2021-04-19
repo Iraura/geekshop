@@ -23,7 +23,7 @@ public class Order extends EntityClass {
     }
 
     @NotNull
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="client_ID")
     private Client client;
 
