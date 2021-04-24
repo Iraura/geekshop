@@ -2,7 +2,9 @@ package entities;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = Order.TABLE_NAME)
@@ -23,9 +25,15 @@ public class Order extends EntityClass {
     }
 
     @NotNull
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="client_ID")
     private Client client;
+
+
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    List<Element> elements;
+
+
 
     @NotNull
     @Column(name = "status")
@@ -81,6 +89,13 @@ public class Order extends EntityClass {
 
     public void setDeliveryDate(Date deliveryDate) {
         this.deliveryDate = deliveryDate;
+    }
+
+    public void addElement(Element element) {
+        if( elements == null){
+            elements = new ArrayList<>();
+        }
+        elements.add(element);
     }
 
     @Override

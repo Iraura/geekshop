@@ -4,15 +4,16 @@ import entities.Category;
 
 public class CategoryRecord extends EntityRecord {
 
-    public CategoryRecord () {}
+    public CategoryRecord() {
+    }
 
-    public CategoryRecord (Integer id, String name , String description){
+    public CategoryRecord(Integer id, String name, String description) {
         this.setName(name);
         this.setId(id);
         this.setDescription(description);
     }
 
-    public CategoryRecord (Category category) {
+    public CategoryRecord(Category category) {
         this(category.getId(), category.getName(), category.getDescription());
     }
 

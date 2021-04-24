@@ -1,14 +1,15 @@
 package dao.services;
+
 import entities.Admin;
 
 public interface AdminRepository {
 
-    void save( Admin admin);
+    void save(Admin admin);
 
-    Admin findByLoginAndPassword ( String login, String password);
+    Admin findByLoginAndPassword(String login, String password);
 
-    void deleteById( Long id);
+    void deleteById(Long id);
 
-    Admin findById( Long id);
+    Admin findById(Long id);
 
 }

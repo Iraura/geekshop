@@ -30,16 +30,15 @@ public class InitializerBean {
     @PostConstruct
     protected void bootstrap() {
         ResourceAccessor resourceAccessor = new ClassLoaderResourceAccessor(getClass().getClassLoader());
-        try  {
+        try {
             Connection connection = ds.getConnection();
 
             JdbcConnection jdbcConnection = new JdbcConnection(connection);
             Database db = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
             Liquibase liquiBase = new Liquibase(CHANGELOG_FILE, resourceAccessor, db);
             liquiBase.update(STAGE);
-        } catch (SQLException  e) {
-        }
-        catch (LiquibaseException  e) {
+        } catch (SQLException e) {
+        } catch (LiquibaseException e) {
         }
 
     }

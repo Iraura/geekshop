@@ -14,27 +14,27 @@ public class SectionRepositoryImpl implements SectionRepository {
 
     @Override
     @Transactional
-    public void save (Section section){
+    public void save(Section section) {
         entityManager.persist(section);
     }
 
     @Override
     @Transactional
-    public void deleteById(Integer id){
+    public void deleteById(Integer id) {
         entityManager.createQuery("update  Section section set section.isDeleted = true where section.id =:id").
-                setParameter("id",id);
+                setParameter("id", id);
     }
 
     @Override
-    public List<Section> findAll(){
-        return entityManager.createQuery("select section from Section section where section.isDeleted = false",Section.class).
+    public List<Section> findAll() {
+        return entityManager.createQuery("select section from Section section where section.isDeleted = false", Section.class).
                 getResultList();
     }
 
-    public List<Section> findByName(String name){
+    public List<Section> findByName(String name) {
         return entityManager.createQuery(
                 "select section from Section section where section.isDeleted = false and section.name = :name",
-                Section.class).setParameter("name",name).getResultList();
+                Section.class).setParameter("name", name).getResultList();
     }
 
     @Override

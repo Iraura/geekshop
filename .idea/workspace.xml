@@ -9,7 +9,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfe23bbd-6a5f-4b4e-b683-e07740558412" name="Default Changelist" comment="" />
+    <list default="true" id="dfe23bbd-6a5f-4b4e-b683-e07740558412" name="Default Changelist" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InitializerBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InitializerBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JavaBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/AdminRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/AdminRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/CategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/CategoryRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/ClientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/ClientRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/ElementRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/ElementRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/OrderRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/OrderRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/PromoCodeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/PromoCodeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/ReviewRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/ReviewRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/SectionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/SectionRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/AdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/AdminRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/ElementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/ElementRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/PromoCodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/PromoCodeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/AdminRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/AdminRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CategoryRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CategoryRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ClientRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ClientRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ElementRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ElementRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ProductRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ProductRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/PromoCodeRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/PromoCodeRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/SectionRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/SectionRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/UserRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/UserRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/PromoCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/PromoCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/create/sozdanie_geek_shop.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/create/sozdanie_geek_shop.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/insert/data_insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/insert/data_insert.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject.war" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,8 +200,17 @@
       <workItem from="1618604459959" duration="6108000" />
       <workItem from="1618610602498" duration="10648000" />
       <workItem from="1618621944423" duration="25567000" />
-      <workItem from="1618807560801" duration="516000" />
+      <workItem from="1618807560801" duration="820000" />
+      <workItem from="1619199959640" duration="17214000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1618808153578</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618808153578</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +226,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
@@ -184,8 +237,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/App.java</url>
-          <line>23</line>
+          <line>22</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/App.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

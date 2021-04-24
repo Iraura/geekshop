@@ -6,13 +6,13 @@ import java.util.List;
 
 public interface ElementRepository {
 
-    void save (Element element);
+    void save(Element element);
 
     List<Element> getAllByOrderId(Long orderId);
 
     List<Element> getAllByProductId(Integer productId);
 
-    void deleteById( Long id);
+    void deleteById(Long id);
 
     List<Element> getAllByProductIdOrderByCount(Integer productId);
 

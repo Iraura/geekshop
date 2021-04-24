@@ -13,16 +13,16 @@ public class Section extends EntityClass {
 
     public final static String TABLE_NAME = "Section";
 
-    public Section () {
+    public Section() {
 
     }
 
-    public Section( String name, String description){
+    public Section(String name, String description) {
         setDescription(description);
         setName(name);
     }
 
-    public Section (SectionRecord record){
+    public Section(SectionRecord record) {
         setName(record.getName());
         setDescription(record.getDescription());
         setId(record.getId());

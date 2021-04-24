@@ -6,7 +6,7 @@ public class UserRecord extends EntityRecord {
 
     }
 
-    public UserRecord(Integer id, String firstName, String lastName, String middleName, String password, String login , String phone){
+    public UserRecord(Integer id, String firstName, String lastName, String middleName, String password, String login, String phone) {
         setId(id);
         setFirstName(firstName);
         setLastName(lastName);
@@ -76,8 +76,8 @@ public class UserRecord extends EntityRecord {
         this.login = login;
     }
 
-    public  String getFullName(){
-        return  String.format( "%s %s %s", getLastName() , getFirstName() ,getMiddleName());
+    public String getFullName() {
+        return String.format("%s %s %s", getLastName(), getFirstName(), getMiddleName());
     }
 
     @Override

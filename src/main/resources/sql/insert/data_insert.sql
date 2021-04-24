@@ -23,7 +23,7 @@ insert into client (ID, firstName, lastName, middleName, birthDay, email, login,
 (1, 'Nikolay', 'Nikolaev', 'Nikolaevich', '1980.01.02', 'nikolaevich@gmail.com', 'nikolya', 'koko1980', '89213467238', 'Samara, Novo- station, 200-21 '),
 (2, 'Tina', 'Kandelaki', 'Ilyinichna', '1992.03.09', 'tinakandek@mail.ru', 'tinki', 'kantin92', '89287572361', 'Sochi, Krasivaya st., 76 '),
 (3, 'Naruto', 'Uzumaki', 'Minatovich', '2001.11.23', 'evergiveup@gmail.com', 'rassengun', 'hokage1', '89357295518', 'Kazan, st.Chak- chuck, 88-2 ');
-insert into admins (ID, firstName, lastName, middleName, login, password, position, workExpirience, salary, phone) values
+insert into admins (ID, firstName, lastName, middleName, login, password, position, workExperience, salary, phone) values
 (1, 'Petya', 'Funny', 'Alexandrovich', 'administrator00', 'geekadmin228', 'Seller', '3 years', 20000, '89227649912');
 insert into orders (ID, client_ID, status, cost, orderDate, deliveryDate) values
 (1, 1, 'Accepted', 5000, '2021.04.16', '2021.04.22'),

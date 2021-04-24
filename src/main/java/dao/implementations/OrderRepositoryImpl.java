@@ -24,8 +24,8 @@ public class OrderRepositoryImpl implements OrderRepository {
     }
 
     @Override
-    public Order findById( Long orderId){
-        return  entityManager.find(Order.class, orderId);
+    public Order findById(Long orderId) {
+        return entityManager.find(Order.class, orderId);
     }
 
     @Override

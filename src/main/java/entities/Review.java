@@ -18,7 +18,7 @@ public class Review extends EntityClass {
 
     }
 
-    public Review(Client client, Product product, String content){
+    public Review(Client client, Product product, String content) {
         setClient(client);
         setProduct(product);
         setContent(content);

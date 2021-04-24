@@ -6,9 +6,10 @@ import java.util.Date;
 
 public class PromoCodeRecord extends EntityRecord {
 
-    public  PromoCodeRecord() {}
+    public PromoCodeRecord() {
+    }
 
-    public  PromoCodeRecord(PromoCode code){
+    public PromoCodeRecord(PromoCode code) {
         this.setName(code.getName());
         this.setCount(code.getCount());
         this.setDiscount(code.getDiscount());

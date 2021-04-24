@@ -4,9 +4,10 @@ import entities.Product;
 
 public class ProductRecord extends EntityRecord {
 
-    public ProductRecord() {}
+    public ProductRecord() {
+    }
 
-    public ProductRecord ( Product product){
+    public ProductRecord(Product product) {
         setName(product.getName());
         setCount(product.getCount());
         setCategoryId(product.getCategory().getId().intValue());

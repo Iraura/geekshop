@@ -21,7 +21,7 @@ public class PromoCodeRepositoryImpl implements PromoCodeRepository {
 
     @Override
     @Transactional
-    public  void deleteByName( String name){
+    public void deleteByName(String name) {
         entityManager.createQuery("update PromoCode promocode set promocode.isDeleted = true where promoCode.name = :name ").
                 setParameter("name", name);
     }

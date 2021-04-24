@@ -6,22 +6,22 @@ import java.util.Date;
 
 public class ClientRecord extends UserRecord {
 
-    public ClientRecord() {}
+    public ClientRecord() {
+    }
 
     public ClientRecord(
-            Integer id , String firstName, String lastName, String middleName, String password, String login ,
+            Integer id, String firstName, String lastName, String middleName, String password, String login,
             String phone, Date birthDay, String email, String address
-    ){
-        super(id, firstName,  lastName,  middleName,  password,  login ,  phone);
+    ) {
+        super(id, firstName, lastName, middleName, password, login, phone);
         setBirthDay(birthDay);
         setEmail(email);
         setAddress(address);
     }
 
 
-
-    public ClientRecord (Client client){
-        this (
+    public ClientRecord(Client client) {
+        this(
                 client.getId(),
                 client.getFirstName(),
                 client.getLastName(),

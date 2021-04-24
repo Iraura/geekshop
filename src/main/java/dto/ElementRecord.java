@@ -2,7 +2,7 @@ package dto;
 
 public class ElementRecord extends EntityRecord {
 
-    private  String code;
+    private String code;
 
     private long orderId;
 

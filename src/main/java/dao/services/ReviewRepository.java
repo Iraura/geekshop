@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface ReviewRepository {
 
-    void save( Review review);
+    void save(Review review);
 
-    void deleteById( Long id );
+    void deleteById(Long id);
 
-    List<Review> getAllByUserId( Long userId);
+    List<Review> getAllByUserId(Long userId);
 
-    List<Review>  getAllByProductId (Long productId);
+    List<Review> getAllByProductId(Long productId);
 }

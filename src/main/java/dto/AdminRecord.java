@@ -2,22 +2,24 @@ package dto;
 
 import entities.Admin;
 
-public class AdminRecord extends UserRecord{
+public class AdminRecord extends UserRecord {
 
 
-    public AdminRecord(){
+    public AdminRecord() {
 
-    };
+    }
 
-    public AdminRecord(Integer id, String firstName, String lastName, String middleName, String password, String login , String phone, String position, String workExperience, int salary) {
-        super( id,firstName,  lastName,  middleName,  password,  login ,  phone);
+    ;
+
+    public AdminRecord(Integer id, String firstName, String lastName, String middleName, String password, String login, String phone, String position, String workExperience, int salary) {
+        super(id, firstName, lastName, middleName, password, login, phone);
         setPosition(position);
         setWorkExperience(workExperience);
         setSalary(salary);
     }
 
-    public AdminRecord (Admin admin){
-        this (
+    public AdminRecord(Admin admin) {
+        this(
                 admin.getId(),
                 admin.getFirstName(),
                 admin.getLastName(),

@@ -11,26 +11,26 @@ import java.util.Date;
 
 @Entity
 @Table(name = Client.TABLE_NAME)
-public class Client extends User  {
+public class Client extends User {
 
     public final static String TABLE_NAME = "Client";
 
-    public Client (){
+    public Client() {
 
     }
 
     public Client(
-            String firstName, String lastName, String middleName, String password, String login ,
+            String firstName, String lastName, String middleName, String password, String login,
             String phone, Date birthDay, String email, String address
-    ){
-        super( firstName,  lastName,  middleName,  password,  login ,  phone);
+    ) {
+        super(firstName, lastName, middleName, password, login, phone);
         setBirthDay(birthDay);
         setEmail(email);
         setAddress(address);
     }
 
-    public Client (ClientRecord record){
-        this (
+    public Client(ClientRecord record) {
+        this(
                 record.getFirstName(),
                 record.getLastName(),
                 record.getMiddleName(),

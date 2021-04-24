@@ -1,15 +1,12 @@
 package entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
 @Table(name = Element.TABLE_NAME)
-public class Element extends EntityClass implements Serializable {
+public class Element implements Serializable {
 
     public final static String TABLE_NAME = "Element";
 
@@ -17,27 +14,34 @@ public class Element extends EntityClass implements Serializable {
 
     }
 
-    public Element( String code, Order order , Product product){
+    public Element(Integer code, Order order, Product product) {
         setCode(code);
         setOrder(order);
         setProduct(product);
     }
 
-    @NotNull
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "code")
-    private String code;
+    private Integer code;
 
     @NotNull
-    @OneToOne
+    @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name = "order_ID")
     private Order order;
 
     @NotNull
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "product_ID")
     private Product product;
 
     @NotNull
     @Column(name = "count")
     private int count;
+
+    @NotNull
+    @Column(name = "isDeleted")
+    private boolean isDeleted = false;
 
     public int getCount() {
         return count;
@@ -47,11 +51,11 @@ public class Element extends EntityClass implements Serializable {
         this.count = count;
     }
 
-    public String getCode() {
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(Integer code) {
         this.code = code;
     }
 
@@ -69,6 +73,14 @@ public class Element extends EntityClass implements Serializable {
 
     public void setProduct(Product product) {
         this.product = product;
+    }
+
+    public void setDeleted(boolean deleted) {
+        isDeleted = deleted;
+    }
+
+    public boolean isDeleted() {
+        return isDeleted;
     }
 
     @Override

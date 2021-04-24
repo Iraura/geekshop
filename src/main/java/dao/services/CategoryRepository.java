@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface CategoryRepository {
 
-    void save (Category category);
+    void save(Category category);
 
     void deleteById(Integer id);
 

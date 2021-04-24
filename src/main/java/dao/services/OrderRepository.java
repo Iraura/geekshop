@@ -8,7 +8,7 @@ public interface OrderRepository {
 
     void deleteById(Long orderId);
 
-    Order findById( Long orderId);
+    Order findById(Long orderId);
 
     List<Order> findByClientId(Long userId);
 

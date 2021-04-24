@@ -19,7 +19,7 @@ public class PromoCode {
 
     }
 
-    public PromoCode (PromoCodeRecord record){
+    public PromoCode(PromoCodeRecord record) {
         this(
                 record.getName(),
                 record.getDiscount(),
@@ -29,7 +29,7 @@ public class PromoCode {
         );
     }
 
-    public PromoCode( String name, int discount , Date fromDate , Date toDate, int count){
+    public PromoCode(String name, int discount, Date fromDate, Date toDate, int count) {
         setName(name);
         setDiscount(discount);
         setFromDate(fromDate);
@@ -61,7 +61,7 @@ public class PromoCode {
 
     @NotNull
     @Column(name = "isDeleted")
-    private  boolean isDeleted;
+    private boolean isDeleted;
 
 
     public String getName() {

@@ -17,8 +17,17 @@ public class Admin extends User {
 
     }
 
-    public Admin(String firstName, String lastName, String middleName, String password, String login , String phone,String position, String workExperience, int salary) {
-        super( firstName,  lastName,  middleName,  password,  login ,  phone);
+    public Admin(
+            String firstName,
+            String lastName,
+            String middleName,
+            String password,
+            String login,
+            String phone,
+            String position,
+            String workExperience,
+            int salary) {
+        super(firstName, lastName, middleName, password, login, phone);
         setPosition(position);
         setWorkExperience(workExperience);
         setSalary(salary);

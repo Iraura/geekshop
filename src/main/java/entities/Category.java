@@ -14,11 +14,11 @@ public class Category extends EntityClass {
 
     public final static String TABLE_NAME = "Category";
 
-    public Category(){
+    public Category() {
 
     }
 
-    public Category( String name, String description ){
+    public Category(String name, String description) {
         setName(name);
         setDescription(description);
     }

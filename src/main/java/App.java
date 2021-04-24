@@ -1,5 +1,4 @@
-import entities.Client;
-import entities.Order;
+import entities.*;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -12,7 +11,7 @@ import java.util.Date;
 
 
 @WebServlet("/test")
-public class App extends HttpServlet{
+public class App extends HttpServlet {
 
     @EJB
     JavaBean javaBean;
@@ -23,17 +22,107 @@ public class App extends HttpServlet{
 
         Client client = javaBean.getClient();
 
-        javaBean.saveOrder( new Order(
+        resp.getWriter().println(client.getFirstName());
+
+        client.setFirstName("CHANGED FIRST NAME");
+
+        resp.getWriter().println(client.getFirstName());
+
+        javaBean.saveOrder(new Order(
                 client,
-                "test",
+                "test1",
                 0,
                 new Date(),
                 new Date()
         ));
 
+        Client secondClient = new Client(
+                "Тестовый",
+                "Тестович",
+                "Тестер",
+                "123",
+                "test",
+                "111",
+                new Date(),
+                "test@mail",
+                "home"
+        );
+
+        Order testOrder = new Order(
+                secondClient,
+                "test2",
+                0,
+                new Date(),
+                new Date()
+        );
+
+
+        javaBean.persistOrder(testOrder);
+
+        Category testCategory = new Category(
+                "My Category",
+                "тестовая категория"
+        );
+
+        javaBean.persistCategory(testCategory);
+
+        Section testSection = new Section(
+                "My Section",
+                "тестовая секция"
+        );
+
+        javaBean.persistSection(testSection);
+
+        Product testProduct = new Product(
+                "test",
+                "descript",
+                100,
+                100,
+                testCategory,
+                testSection,
+                "фоточка"
+        );
+
+        javaBean.saveProduct(testProduct);
+
+        Element testElem = new Element(
+                123,
+                testOrder,
+                testProduct
+        );
+
+        testOrder.addElement(testElem);
+        javaBean.saveElement(testElem);
+
+        PromoCode testPromo = new PromoCode(
+                "testPromo",
+                50,
+                new Date(),
+                new Date(),
+                5
+        );
+
+        javaBean.persistPromoCode(testPromo);
+
+        Admin testAdmin = new Admin(
+                "Тестовый",
+                "Тестович",
+                "Тестер",
+                "123",
+                "test",
+                "1111",
+                "Admin",
+                "10 лет",
+                30000
+        );
+
+        javaBean.persistAdmin(testAdmin);
+
+        javaBean.deleteOrder(testOrder);
+
         try {
             resp.getWriter().println("Hello from servlet");
-        }catch (Exception e){
+        } catch (Exception e) {
             resp.getWriter().println(e.getMessage());
         }
     }

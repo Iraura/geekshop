@@ -4,9 +4,10 @@ import entities.Section;
 
 public class SectionRecord extends EntityRecord {
 
-    public SectionRecord () {}
+    public SectionRecord() {
+    }
 
-    public  SectionRecord (Section section){
+    public SectionRecord(Section section) {
         setName(section.getName());
         setDescription(section.getDescription());
         setId(section.getId());

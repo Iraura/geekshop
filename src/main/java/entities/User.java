@@ -6,7 +6,6 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 
-
 @MappedSuperclass
 public class User extends EntityClass {
 
@@ -14,7 +13,7 @@ public class User extends EntityClass {
 
     }
 
-    public User(String firstName, String lastName, String middleName, String password, String login , String phone){
+    public User(String firstName, String lastName, String middleName, String password, String login, String phone) {
         setFirstName(firstName);
         setLastName(lastName);
         setMiddleName(middleName);

@@ -7,7 +7,7 @@ import java.util.List;
 public interface PromoCodeRepository {
     void save(PromoCode promoCode);
 
-    void deleteByName( String name);
+    void deleteByName(String name);
 
     List<PromoCode> findAll();
 

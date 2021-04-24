@@ -18,7 +18,7 @@ public class Product extends EntityClass {
 
     }
 
-    public Product( String name, String description, int price, int count, Category category, Section section, String picture){
+    public Product(String name, String description, int price, int count, Category category, Section section, String picture) {
         setName(name);
         setDescription(description);
         setPrice(price);
@@ -28,7 +28,7 @@ public class Product extends EntityClass {
         setPicture(picture);
     }
 
-    public Product (ProductRecord record, Section section, Category category){
+    public Product(ProductRecord record, Section section, Category category) {
         this(
                 record.getName(),
                 record.getDescription(),
