@@ -13,6 +13,11 @@ public class Section extends EntityClass {
 
     public final static String TABLE_NAME = "Section";
 
+    private interface Columns {
+        String NAME = "name";
+        String DESCRIPTION = "description";
+    }
+
     public Section() {
 
     }
@@ -29,11 +34,11 @@ public class Section extends EntityClass {
     }
 
     @NotNull
-    @Column(name = "name")
+    @Column(name = Columns.NAME)
     public String name;
 
     @NotNull
-    @Column(name = "description")
+    @Column(name = Columns.DESCRIPTION)
     public String description;
 
     public String getName() {

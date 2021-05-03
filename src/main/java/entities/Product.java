@@ -14,6 +14,14 @@ public class Product extends EntityClass {
 
     public final static String TABLE_NAME = "Product";
 
+    private interface Columns {
+        String NAME = "name";
+        String DESCRIPTION = "description";
+        String PRICE = "price";
+        String COUNT = "count";
+        String PICTURE = "picture";
+    }
+
     public Product() {
 
     }
@@ -41,19 +49,19 @@ public class Product extends EntityClass {
     }
 
     @NotNull
-    @Column(name = "name")
+    @Column(name = Columns.NAME)
     private String name;
 
     @NotNull
-    @Column(name = "description")
+    @Column(name = Columns.DESCRIPTION)
     private String description;
 
     @NotNull
-    @Column(name = "price")
+    @Column(name = Columns.PRICE)
     private int price;
 
     @NotNull
-    @Column(name = "count")
+    @Column(name = Columns.COUNT)
     private int count;
 
     @NotNull
@@ -65,7 +73,7 @@ public class Product extends EntityClass {
     private Section section;
 
     @NotNull
-    @Column(name = "picture")
+    @Column(name = Columns.PICTURE)
     private String picture;
 
 

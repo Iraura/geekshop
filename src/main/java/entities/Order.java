@@ -12,11 +12,19 @@ public class Order extends EntityClass {
 
     public final static String TABLE_NAME = "Orders";
 
-    public Order () {
+    private interface Columns {
+        String CLIENT = "client_ID";
+        String STATUS = "status";
+        String COST = "cost";
+        String ORDER_DATE = "orderDate";
+        String DELIVERY_DATE = "deliveryDate";
+    }
+
+    public Order() {
 
     }
 
-    public Order( Client client, String status, int cost, Date deliveryDate, Date orderDate){
+    public Order(Client client, String status, int cost, Date deliveryDate, Date orderDate) {
         setClient(client);
         setStatus(status);
         setCost(cost);
@@ -25,30 +33,28 @@ public class Order extends EntityClass {
     }
 
     @NotNull
-    @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
-    @JoinColumn(name="client_ID")
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name = Columns.CLIENT)
     private Client client;
 
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     List<Element> elements;
 
-
-
     @NotNull
-    @Column(name = "status")
+    @Column(name = Columns.STATUS)
     private String status;
 
     @NotNull
-    @Column(name = "cost")
+    @Column(name = Columns.COST)
     private int cost;
 
     @NotNull
-    @Column(name = "orderDate")
+    @Column(name = Columns.ORDER_DATE)
     private Date orderDate;
 
     @NotNull
-    @Column(name = "deliveryDate")
+    @Column(name = Columns.DELIVERY_DATE)
     private Date deliveryDate;
 
     public Client getClient() {
@@ -92,7 +98,7 @@ public class Order extends EntityClass {
     }
 
     public void addElement(Element element) {
-        if( elements == null){
+        if (elements == null) {
             elements = new ArrayList<>();
         }
         elements.add(element);

@@ -14,6 +14,10 @@ public class Review extends EntityClass {
 
     public final static String TABLE_NAME = "Review";
 
+    private interface Columns {
+        String CONTENT = "content";
+    }
+
     public Review() {
 
     }
@@ -33,7 +37,7 @@ public class Review extends EntityClass {
     private Product product = new Product();
 
     @NotNull
-    @Column(name = "content")
+    @Column(name = Columns.CONTENT)
     private String content;
 
     public Client getClient() {

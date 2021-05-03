@@ -13,6 +13,12 @@ public class Admin extends User {
 
     public final static String TABLE_NAME = "Admins";
 
+    private interface Columns {
+        String POSITION = "position";
+        String WORK_EXPERIENCE = "workExperience";
+        String SALARY = "salary";
+    }
+
     public Admin() {
 
     }
@@ -34,15 +40,15 @@ public class Admin extends User {
     }
 
     @NotNull
-    @Column(name = "position")
+    @Column(name = Columns.POSITION)
     private String position;
 
     @NotNull
-    @Column(name = "workExperience")
+    @Column(name = Columns.WORK_EXPERIENCE)
     private String workExperience;
 
     @NotNull
-    @Column(name = "salary")
+    @Column(name = Columns.SALARY)
     private int salary;
 
     public String getPosition() {

@@ -10,6 +10,14 @@ public class Element implements Serializable {
 
     public final static String TABLE_NAME = "Element";
 
+    private interface Columns {
+        String CODE = "code";
+        String ORDER = "order_ID";
+        String PRODUCT = "product_ID";
+        String COUNT = "count";
+        String IS_DELETED = "isDeleted";
+    }
+
     public Element() {
 
     }
@@ -22,25 +30,25 @@ public class Element implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "code")
+    @Column(name = Columns.CODE)
     private Integer code;
 
     @NotNull
-    @ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
-    @JoinColumn(name = "order_ID")
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name = Columns.ORDER)
     private Order order;
 
     @NotNull
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "product_ID")
+    @JoinColumn(name = Columns.PRODUCT)
     private Product product;
 
     @NotNull
-    @Column(name = "count")
+    @Column(name = Columns.COUNT)
     private int count;
 
     @NotNull
-    @Column(name = "isDeleted")
+    @Column(name = Columns.IS_DELETED)
     private boolean isDeleted = false;
 
     public int getCount() {

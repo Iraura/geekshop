@@ -14,6 +14,11 @@ public class Category extends EntityClass {
 
     public final static String TABLE_NAME = "Category";
 
+    private interface Columns {
+        String NAME = "name";
+        String DESCRIPTION = "description";
+    }
+
     public Category() {
 
     }
@@ -24,11 +29,11 @@ public class Category extends EntityClass {
     }
 
     @NotNull
-    @Column(name = "name")
+    @Column(name = Columns.NAME)
     public String name;
 
     @NotNull
-    @Column(name = "description")
+    @Column(name = Columns.DESCRIPTION)
     public String description;
 
     public Category(CategoryRecord record) {

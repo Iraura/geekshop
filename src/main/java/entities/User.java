@@ -9,6 +9,15 @@ import javax.validation.constraints.NotNull;
 @MappedSuperclass
 public class User extends EntityClass {
 
+    private interface Columns {
+        String FIRST_NAME = "firstName";
+        String LAST_NAME = "lastName";
+        String MIDDLE_NAME = "middleName";
+        String PASSWORD = "password";
+        String LOGIN = "login";
+        String PHONE = "phone";
+    }
+
     public User() {
 
     }
@@ -23,26 +32,26 @@ public class User extends EntityClass {
     }
 
     @NotNull
-    @Column(name = "firstName")
+    @Column(name = Columns.FIRST_NAME)
     private String firstName;
 
     @NotNull
-    @Column(name = "lastName")
+    @Column(name = Columns.LAST_NAME)
     private String lastName;
 
-    @Column(name = "middleName")
+    @Column(name = Columns.MIDDLE_NAME)
     private String middleName;
 
     @NotNull
-    @Column(name = "password")
+    @Column(name = Columns.PASSWORD)
     private String password;
 
     @NotNull
-    @Column(name = "login")
+    @Column(name = Columns.LOGIN)
     private String login;
 
     @NotNull
-    @Column(name = "phone")
+    @Column(name = Columns.PHONE)
     private String phone;
 
     public String getFirstName() {

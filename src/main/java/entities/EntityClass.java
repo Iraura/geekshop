@@ -6,13 +6,18 @@ import javax.validation.constraints.NotNull;
 @MappedSuperclass
 public class EntityClass {
 
+    private interface Columns {
+        String ID = "ID";
+        String IS_DELETED = "isDeleted";
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
+    @Column(name = Columns.ID)
     private Integer id;
 
     @NotNull
-    @Column(name = "isDeleted")
+    @Column(name = Columns.IS_DELETED)
     private boolean isDeleted = false;
 
 

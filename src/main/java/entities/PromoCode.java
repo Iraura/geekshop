@@ -15,6 +15,15 @@ public class PromoCode {
 
     public final static String TABLE_NAME = "PromoCode";
 
+    private interface Columns {
+        String NAME = "name";
+        String DISCOUNT = "discount";
+        String FROM_DATE = "fromDate";
+        String TO_DATE = "toDate";
+        String COUNT = "count";
+        String IS_DELETED = "isDeleted";
+    }
+
     public PromoCode() {
 
     }
@@ -40,27 +49,27 @@ public class PromoCode {
 
     @Id
     @NotNull
-    @Column(name = "name")
+    @Column(name = Columns.NAME)
     private String name;
 
     @NotNull
-    @Column(name = "discount")
+    @Column(name = Columns.DISCOUNT)
     private int discount;
 
     @NotNull
-    @Column(name = "fromDate")
+    @Column(name = Columns.FROM_DATE)
     private Date fromDate;
 
     @NotNull
-    @Column(name = "toDate")
+    @Column(name = Columns.TO_DATE)
     private Date toDate;
 
     @NotNull
-    @Column(name = "count")
+    @Column(name = Columns.COUNT)
     private int count;
 
     @NotNull
-    @Column(name = "isDeleted")
+    @Column(name = Columns.IS_DELETED)
     private boolean isDeleted;
 
 

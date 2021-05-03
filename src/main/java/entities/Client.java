@@ -15,6 +15,12 @@ public class Client extends User {
 
     public final static String TABLE_NAME = "Client";
 
+    private interface Columns {
+        String BIRTH_DAY = "birthDay";
+        String EMAIL = "email";
+        String ADDRESS = "address";
+    }
+
     public Client() {
 
     }
@@ -44,15 +50,15 @@ public class Client extends User {
     }
 
     @NotNull
-    @Column(name = "birthDay")
+    @Column(name = Columns.BIRTH_DAY)
     private Date birthDay;
 
     @NotNull
-    @Column(name = "email")
+    @Column(name = Columns.EMAIL)
     private String email;
 
     @NotNull
-    @Column(name = "address")
+    @Column(name = Columns.ADDRESS)
     private String address;
 
 
