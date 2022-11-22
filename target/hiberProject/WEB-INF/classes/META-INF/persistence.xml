@@ -8,7 +8,7 @@
         <jta-data-source>java:/MySqlDS</jta-data-source>
         <class>InitializerBean</class>
         <class>JavaBean</class>
-        <class>App</class>
+        <class>RegisterServlet</class>
         <class>entities.Client</class>
         <class>entities.Admin</class>
         <class>entities.Order</class>

@@ -33,12 +33,12 @@ public class Order extends EntityClass {
     }
 
     @NotNull
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
+    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name = Columns.CLIENT)
     private Client client;
 
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     List<Element> elements;
 
     @NotNull
@@ -102,6 +102,10 @@ public class Order extends EntityClass {
             elements = new ArrayList<>();
         }
         elements.add(element);
+    }
+
+    public List<Element> getElements() {
+        return elements;
     }
 
     @Override

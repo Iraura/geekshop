@@ -2,10 +2,7 @@ package entities;
 
 import dto.ProductRecord;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -65,11 +62,11 @@ public class Product extends EntityClass {
     private int count;
 
     @NotNull
-    @OneToOne
+    @ManyToOne
     private Category category;
 
     @NotNull
-    @OneToOne
+    @ManyToOne
     private Section section;
 
     @NotNull

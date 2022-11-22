@@ -6,7 +6,7 @@ insert into section(ID,name, description) values
 (5, 'MARVEL Universe', 'Here you will find paraphernalia of your favorite characters from the famous MARVEL universe!'),
 (6, 'DC Universe', 'Here you will find paraphernalia of your favorite characters from the famous DC Universe!'),
 (7, 'Games', 'Here you will find paraphernalia for the games you spent so much time in!'),
-(8, 'Miscellaneous', 'Here you can find many other cool products that you might like!');
+(8, 'Other', 'Here you can find many other cool products that you might like!');
 insert into category (ID, name, description) values
 (1, 'T-shirts', 'Choose what you like!'),
 (2, 'Mugs', 'Choose what you like!'),
@@ -14,7 +14,7 @@ insert into category (ID, name, description) values
 (4, 'Socks', 'Choose what you like!'),
 (5, 'Keychains', 'Choose what you like!'),
 (6, 'Books and comics', 'Choose what you like!'),
-(7, 'Soft toys', 'Choose what you like!'),
+(7, 'Toys', 'Choose what you like!'),
 (8, 'Stickers', 'Choose what you like!');
 insert into promocode (name, discount, fromDate, toDate, count) values
 ('WEB', 10, '2021.04.10', '2022.04.10', 5),
@@ -29,12 +29,25 @@ insert into orders (ID, client_ID, status, cost, orderDate, deliveryDate) values
 (1, 1, 'Accepted', 5000, '2021.04.16', '2021.04.22'),
 (2, 2, 'Issued', 3500, '2021.04.08', '2021.04.14'),
 (3, 3, 'Accepted', 2100, '2021.04.15', '2021.04.21');
-insert into product (ID, name, description, price, count, section_ID, category_ID) values
-(1, 'Naruto Manga Volume 1', 'Featured', 500, 20, 1, 1),
-(2, 'Harry Potter T-shirt', 'Harry Potter persistent print cotton T-shirt', 700, 15, 2, 2),
-(3, '"Friends" mug', 'Ceramic mug with a print from the cult series Friends!', 400, 30, 3, 2),
-(4, 'Spiderman Poster', 'Vintage poster to create an atmosphere in your room or other room. Size 30x40. Great gift for a fan of the MARVEL universe!', 100, 25, 5, 3),
-(5, '"Attack of the Titans" Stickers', 'A set of stickers, A5 format. Perfect as a gift for a fan of the cult anime "Attack of the Titans!"', 100, 50, 1, 8);
+insert into product (ID, name, description, price, picture, count, section_ID, category_ID) values
+(1, 'T-shirt Naruto', 'T-shirt, size M', 1000,'img/naruto1.jpg', 20, 1, 1),
+(2, 'Akatsuki mug', 'Ceramic mug with a print from the anime "Naruto"', 300,'img/naruto2.jpg', 15, 1, 2),
+(3, 'Kakashi keychains', 'Round plastic keychain from the anime "Naruto"', 50,'img/naruto3.jpg', 30, 1, 5),
+(4, 'Death note Poster', 'Poster 20x30 cm from the anime "Death Note"', 120,'img/deathnote_poster1.jpg', 25, 1, 3),
+(5, 'Manga Naruto. Volume 2', 'Naruto. Book 2. The Heros Bridge. Hard cover', 500,'img/anime_book1.jpg', 50, 1, 6),
+(6, 'Naruto socks', 'High socks 36-40 size (unisex)', 200,'img/anime_socks1.jpg', 20, 1, 4),
+(7, 'Attack on Titan figurine', 'Attack on Titan Funko Pop Levi Action Figure', 800,'img/anime_toy1.jpg', 20, 1, 7),
+(8, 'Naruto stickers', 'Vinyl stickers from the anime "Naruto". A5 format', 150,'img/anime_stickers1.jpg', 20, 1, 8),
+(9, 'Akatsuki T-shirt', 'T-shirt, size M', 1000,'img/anime_tshirt2.jpg', 20, 1, 1),
+(10, 'Harry Potter T-shirt', 'T-shirt, size M', 1000,'img/films_tshirt1.jpg', 20, 2, 1),
+(11, 'Mug "Pulp Fiction"', 'Mug with a print from the movie "Pulp Fiction"', 300,'img/films_mug1.jpg', 20, 2, 2),
+(12, 'Poster "The Big Lebowski"', 'Poster 20x30 cm from the movie "The Big Lebowski"', 120,'img/films_poster1.jpg', 20, 2, 3),
+(13, 'Breaking Bad T-shirt', 'T-shirt, size M', 1000,'img/serials_tshirt1.jpg', 20, 3, 1),
+(14, 'Mug "Friends"', 'Mug with a print from the TV series "Friends"', 300,'img/serials_mug1.jpg', 20, 3, 2),
+(15, 'Breaking Bad Comic', 'Breaking Bad: All Bad Comics', 500,'img/serials_book1.jpg', 20, 3, 6),
+(16, 'The Simpsons Figurine', 'Funko pop Homer Simpson Action Figure', 1100,'img/cartoons_toy1.jpg', 20, 4, 7),
+(17, 'Mug "Futurama"', 'Mug with print from the animated series "Futurama"', 300,'img/cartoons_mug1.jpg', 20, 4, 2),
+(18, 'Rick and Morty poster', '20x30 poster from the animated series "Rick and Morty"', 120,'img/cartoons_poster1.jpg', 20, 4, 3);
 insert into element (code, product_ID, order_ID, count) values
 (1, 1, 1, 10),
 (2, 2, 2, 5),

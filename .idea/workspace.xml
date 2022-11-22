@@ -9,49 +9,131 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfe23bbd-6a5f-4b4e-b683-e07740558412" name="Default Changelist" comment="Initial commit">
+    <list default="true" id="dfe23bbd-6a5f-4b4e-b683-e07740558412" name="Default Changelist" comment="Columns name mapping refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BuyItemServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ItemsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LkAdminServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LkUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogInServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MarkOrderReadyServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OfferOrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StatisticServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UserOrdersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ShoppingCardElementRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/anime.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/anime_tshirts.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/cartoons.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/create_user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/dc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/films.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/games.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/anime_book1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/anime_socks1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/anime_stickers1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/anime_toy1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/anime_tshirt2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/back1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/back2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/cartoons_mug1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/cartoons_poster1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/cartoons_toy1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/deathnote_poster1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/films_mug1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/films_poster1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/films_tshirt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/irina.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/naruto1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/naruto2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/naruto3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/pavel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/serials_book1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/serials_mug1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/img/serials_tshirt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/items.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/items.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/lk_admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/lk_user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/marvel.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/my_orders.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/prochee.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/serials.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/sign_in.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/statistic.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/src/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InitializerBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InitializerBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JavaBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/AdminRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/AdminRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/CategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/CategoryRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/ClientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/ClientRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/ElementRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/ElementRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/OrderRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/OrderRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/ProductRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/PromoCodeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/PromoCodeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/ReviewRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/ReviewRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/implementations/SectionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/implementations/SectionRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/AdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/AdminRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/ElementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/ElementRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/PromoCodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/PromoCodeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/services/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/services/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/AdminRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/AdminRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CategoryRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CategoryRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ClientRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ClientRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ElementRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ElementRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ProductRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ProductRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/PromoCodeRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/PromoCodeRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/SectionRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/SectionRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/UserRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/UserRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Element.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/PromoCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/PromoCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/create/sozdanie_geek_shop.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/create/sozdanie_geek_shop.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sql/insert/data_insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/insert/data_insert.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/InitializerBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/InitializerBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JavaBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JavaBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/AdminRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/AdminRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/CategoryRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/CategoryRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/ClientRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/ClientRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/ProductRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/ProductRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/PromoCodeRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/PromoCodeRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/SectionRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/SectionRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/EntityClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/EntityClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/PromoCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/PromoCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Section.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Section.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liquibase/db.changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/db.changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/create/sozdanie_geek_shop.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sql/create/sozdanie_geek_shop.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/insert/data_insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sql/insert/data_insert.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/hiberProject.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/InitializerBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/InitializerBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/JavaBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/JavaBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/AdminRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/AdminRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/CategoryRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/CategoryRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/ClientRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/ClientRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/ProductRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/ProductRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/PromoCodeRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/PromoCodeRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/SectionRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/dto/SectionRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/EntityClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/EntityClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/PromoCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/PromoCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Section.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/Section.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/liquibase/db.changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/liquibase/db.changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/sql/create/sozdanie_geek_shop.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/sql/create/sozdanie_geek_shop.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/sql/insert/data_insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/hiberProject/WEB-INF/classes/sql/insert/data_insert.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +149,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1r1sEO7MXOrDe3axTDcjffUYgTQ" />
@@ -81,7 +168,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -93,6 +180,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\iraur\Desktop\GeekShop\Project\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\iraur\Desktop\GeekShop\Project\src\main\webapp" />
       <recent name="C:\Users\iraur\Desktop\GeekShop\Project\src\main\resources\sql\create" />
       <recent name="C:\Users\iraur\Desktop\GeekShop\Project\src\main\resources\sql" />
     </key>
@@ -109,7 +198,7 @@
   </component>
   <component name="RunManager">
     <configuration name="jboss" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 10.1.0.Final" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/hiberProject" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/hiberProject/src/sign_in.jsp" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Project:war">
@@ -201,7 +290,80 @@
       <workItem from="1618610602498" duration="10648000" />
       <workItem from="1618621944423" duration="25567000" />
       <workItem from="1618807560801" duration="820000" />
-      <workItem from="1619199959640" duration="17214000" />
+      <workItem from="1619199959640" duration="17945000" />
+      <workItem from="1620047984360" duration="3813000" />
+      <workItem from="1622879514285" duration="1250000" />
+      <workItem from="1622881453049" duration="1323000" />
+      <workItem from="1622882952275" duration="1666000" />
+      <workItem from="1622885482566" duration="661000" />
+      <workItem from="1622886460817" duration="757000" />
+      <workItem from="1622887404263" duration="1856000" />
+      <workItem from="1622889292243" duration="113000" />
+      <workItem from="1622889581630" duration="254000" />
+      <workItem from="1622890005124" duration="14000" />
+      <workItem from="1622893752407" duration="191000" />
+      <workItem from="1622894824694" duration="1272000" />
+      <workItem from="1622896843119" duration="1215000" />
+      <workItem from="1622898082541" duration="216000" />
+      <workItem from="1622899289419" duration="1042000" />
+      <workItem from="1622905191829" duration="152000" />
+      <workItem from="1622906677050" duration="801000" />
+      <workItem from="1622908758207" duration="825000" />
+      <workItem from="1622909711567" duration="1478000" />
+      <workItem from="1622911945382" duration="615000" />
+      <workItem from="1622912748996" duration="961000" />
+      <workItem from="1622913809605" duration="1559000" />
+      <workItem from="1622959366080" duration="988000" />
+      <workItem from="1622960376021" duration="647000" />
+      <workItem from="1622961663278" duration="378000" />
+      <workItem from="1622962269847" duration="768000" />
+      <workItem from="1622963366582" duration="1773000" />
+      <workItem from="1622965166712" duration="846000" />
+      <workItem from="1622966753229" duration="464000" />
+      <workItem from="1622970090956" duration="982000" />
+      <workItem from="1622971778350" duration="1287000" />
+      <workItem from="1622973107492" duration="1145000" />
+      <workItem from="1622974271509" duration="525000" />
+      <workItem from="1622974822292" duration="879000" />
+      <workItem from="1622976620648" duration="272000" />
+      <workItem from="1622977099727" duration="939000" />
+      <workItem from="1622978240773" duration="807000" />
+      <workItem from="1622979681250" duration="612000" />
+      <workItem from="1622983715151" duration="959000" />
+      <workItem from="1622984702099" duration="1476000" />
+      <workItem from="1622986387360" duration="1118000" />
+      <workItem from="1622991164278" duration="840000" />
+      <workItem from="1622992135301" duration="1919000" />
+      <workItem from="1622994266125" duration="101000" />
+      <workItem from="1622994661104" duration="363000" />
+      <workItem from="1622995145015" duration="449000" />
+      <workItem from="1622995985793" duration="489000" />
+      <workItem from="1623000045752" duration="1113000" />
+      <workItem from="1623001180043" duration="956000" />
+      <workItem from="1623002159519" duration="863000" />
+      <workItem from="1623003183314" duration="789000" />
+      <workItem from="1623003995953" duration="858000" />
+      <workItem from="1623004875803" duration="972000" />
+      <workItem from="1623005876483" duration="1149000" />
+      <workItem from="1623007046077" duration="834000" />
+      <workItem from="1623009890767" duration="558000" />
+      <workItem from="1623011150313" duration="1321000" />
+      <workItem from="1623013474216" duration="2791000" />
+      <workItem from="1623016941824" duration="1147000" />
+      <workItem from="1623018111230" duration="490000" />
+      <workItem from="1623018635250" duration="1854000" />
+      <workItem from="1623020535103" duration="52000" />
+      <workItem from="1623020994488" duration="722000" />
+      <workItem from="1623021750145" duration="808000" />
+      <workItem from="1623045794586" duration="606000" />
+      <workItem from="1623047918198" duration="1061000" />
+      <workItem from="1623524475119" duration="132000" />
+      <workItem from="1623606970361" duration="403000" />
+      <workItem from="1623607407316" duration="612000" />
+      <workItem from="1623609649733" duration="733000" />
+      <workItem from="1626003681238" duration="123000" />
+      <workItem from="1626009427343" duration="884000" />
+      <workItem from="1626012197938" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1618808153578</created>
@@ -210,7 +372,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618808153578</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First control point">
+      <created>1619285669526</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619285669526</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Columns name mapping refactoring">
+      <created>1620067981457</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620067981457</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,20 +406,101 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="First control point" />
+    <MESSAGE value="Columns name mapping refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Columns name mapping refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/App.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ItemsServlet.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CategoryServlet.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RegisterServlet.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RegisterServlet.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RegisterServlet.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/App.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/java/BuyItemServlet.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LkUserServlet.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BuyItemServlet.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BuyItemServlet.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/src/lk_user.jsp</url>
+          <line>44</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ItemsServlet.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/StatisticServlet.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LogInServlet.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/OfferOrderServlet.java</url>
+          <line>21</line>
+          <properties class="OfferOrderServlet" method="doGet">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/StatisticServlet.java</url>
+          <line>21</line>
+          <properties class="StatisticServlet" method="doGet">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/MarkOrderReadyServlet.java</url>
+          <line>21</line>
+          <properties class="MarkOrderReadyServlet" method="doGet">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

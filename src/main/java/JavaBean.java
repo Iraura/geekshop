@@ -15,10 +15,12 @@ public class JavaBean {
 
     public void saveOrder(Order order) {
         entityManager.merge(order);
+        entityManager.flush();
     }
 
     public void persistOrder(Order order) {
         entityManager.persist(order);
+        entityManager.flush();
     }
 
     public void saveClient(Client client) {
@@ -35,6 +37,7 @@ public class JavaBean {
 
     public void persistClient(Client client) {
         entityManager.persist(client);
+        entityManager.flush();
     }
 
     public void saveAdmin(Admin admin) {
@@ -93,8 +96,74 @@ public class JavaBean {
         entityManager.persist(category);
     }
 
-    public Client getClient() {
-        return entityManager.find(Client.class, 1);
+    public Client getClient(Integer id) {
+        return entityManager.find(Client.class, id);
+    }
+
+    public List<Category> getCategories(){
+        return entityManager.createQuery("select category from Category category where category.isDeleted = false", Category.class).
+                getResultList();
+    }
+
+    public List<Section> getSections () {
+        return entityManager.createQuery("select section from Section section where section.isDeleted = false", Section.class).
+                getResultList();
+    }
+
+    public List<Product> getProducts(){
+        return entityManager.createQuery(" select product from Product product where  product.count > 0 and product.isDeleted = false", Product.class).getResultList();
+    }
+
+    public List<Client> findClientByLoginAndPassword(String login, String password) {
+        return entityManager.createQuery(
+                "select client from Client client where client.isDeleted = false and client.login = :login and client.password = :password ",
+                Client.class).setParameter("login", login).setParameter("password", password).getResultList();
+    }
+
+    public List<Order> getOrdersForAdmin(){
+        return entityManager.createQuery(
+                "select order from Order order where   order.isDeleted = false ", Order.class).getResultList();
+    }
+
+    public List<Order> getOrdersForClient(Integer clientId){
+        return entityManager.createQuery(
+                "select order from Order order where order.client.id = :id and order.isDeleted = false ",
+                Order.class).setParameter("id", clientId).getResultList();
+    }
+
+    public List<Order> getOrdersByUserId(Integer userId){
+        return entityManager.createQuery(
+                "select order from Order order where order.client.id = :id and order.isDeleted = false ",
+                Order.class).setParameter("id", userId).getResultList();
+    }
+
+    public Product findProductById(Integer productId) {
+        return entityManager.find(Product.class, productId);
+    }
+
+    public Order findOrderById(Integer orderId){
+        return entityManager.find(Order.class, orderId);
+    }
+
+    public List<Admin> findAdminByLoginAndPassword(String login, String password) {
+        return entityManager.createQuery(
+                "select admin from Admin admin where admin.isDeleted = false and admin.login = :login and admin.password = :password ",
+                Admin.class).setParameter("login", login).setParameter("password", password).getResultList();
+    }
+
+    public List<Object[]> statisticQueryByProductCount(){
+        return  entityManager.createNativeQuery(
+                "select tab.product_ID , product.name , tab.cou \n" +
+                        "FROM (select sum(count) cou, product_ID from element group by product_ID) tab\n" +
+                        "join product on product.id = tab.product_ID;").getResultList();
+
+    }
+
+    public List<Object[]> statisticQueryByProductPrice(){
+        return  entityManager.createNativeQuery(
+                "select tab.product_ID , product.name , tab.cou*product.price \n" +
+                        "FROM (select sum(count) cou, product_ID from element group by product_ID) tab\n" +
+                        "join product on product.id = tab.product_ID;").getResultList();
     }
 
 }

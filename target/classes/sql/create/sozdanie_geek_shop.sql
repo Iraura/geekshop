@@ -26,7 +26,7 @@ CREATE TABLE `Product` (
 );
 CREATE TABLE `Orders` (
                           `ID` INT NOT NULL AUTO_INCREMENT UNIQUE,
-                          `client_ID` INT NOT NULL UNIQUE,
+                          `client_ID` INT NOT NULL,
                           `status` VARCHAR(255) NOT NULL,
                           `cost` INT NOT NULL,
                           `orderDate` DATE NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE `Admins` (
                           `login` VARCHAR(255) NOT NULL UNIQUE,
                           `password` VARCHAR(255) NOT NULL,
                           `position` VARCHAR(255) NOT NULL,
-                          `workExpirience` VARCHAR(255),
+                          `workExperience` VARCHAR(255),
                           `salary` INT NOT NULL,
                           `phone` VARCHAR(255) NOT NULL UNIQUE,
                           `isDeleted` BOOLEAN NOT NULL default 0,
